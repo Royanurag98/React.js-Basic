@@ -1,6 +1,8 @@
 import React, { createContext } from 'react'
 import './App.css'
-import Comp3 from './components/Comp3'
+import LoginUseer from './components/LoginUseer'
+import ProfileUser from './components/ProfileUser'
+
 
 export const nameContext=createContext()
 export const ageContext=createContext()
@@ -9,11 +11,8 @@ function App() {
 
   return (
     <>
-    <nameContext.Provider value={"Anurag Roy"}>
-      <ageContext.Provider value={23}>
-        <Comp3/>
-      </ageContext.Provider>
-    </nameContext.Provider>
+    <LoginUseer/>
+    <ProfileUser/>
   
     </>
   )
